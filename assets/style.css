@@ -41,23 +41,29 @@ font-family: 'Lato', sans-serif; */
 
 /* H1 Heading */
 .hero-text h1 {
+    color: black;
+    background: linear-gradient(to right, #E5E5E5, #FCA311);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     font-family: 'Abril Fatface', cursive;
-color:rgba(0, 0, 0, 0.7)
 }
 
 /* Two sentence section */
 .hero-text p{
 text-transform: uppercase;
+letter-spacing: 1px;
+font-family: 'Lato', sans-serif;
+padding:5px;
 }
 
 .hero-text p>span {
-    color: white;
+    color: #E63946;
 }
 
-.hero-text p {
-    letter-spacing: 1px;
-    font-family: 'Lato', sans-serif; 
+#month{
+color:#A8DADC;
 }
+
 /* Button section */ 
 .hero-text button {
     border-radius: 50px;
@@ -94,4 +100,59 @@ text-transform: uppercase;
     letter-spacing: 1px;
 }
 
+/* The little disclosure tuition page */
+.sinfo{
+padding: 20px;
+background-color: #E5E5E5;
+}
+
+.sinfo h3{
+    font-family:'Lato', sans-serif;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    letter-spacing: 1px;
+    font-size: 35px;
+}
+
+.sinfo p{
+    letter-spacing: 1px;
+    line-height: 1.4;
+    font-family:'Lato', sans-serif;
+}
+
+/* The Inspiration page */
+.apply{
+    padding:20px;
+}
+
+/* The header */
+.apply h1{
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+}
+
+hr{
+    color: #E5E5E5;
+}
+
+.apply p{
+padding-top: 10px;
+font-family: 'Lato', sans-serif;
+letter-spacing: 1px;
+line-height: 1.4;
+padding-bottom: 10px;
+}
+/* The Apply now Button */
+.apply button{
+    border: 1px black solid;
+    padding:20px;
+    font-family: 'Lato', sans-serif;
+    background-color: #FCA311;
+}
+
+.apply img{
+    width:100%;
+    padding-top: 20px;
+}
 
