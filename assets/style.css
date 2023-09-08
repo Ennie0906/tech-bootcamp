@@ -1,158 +1,357 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    rotate: 10px;
+  }
+  to {
+    opacity: 1;
+    rotate: 0;
+  }
 }
 
 body,
 html {
-    height: 100%;
+  height: 100%;
+  animation: transitionIn 2s;
 }
 
 /* Google Fonts 
 font-family: 'Abril Fatface', cursive;
 font-family: 'Lato', sans-serif; */
 
-
-
 /* The hero image */
 .hero-image {
-    /* Use "linear-gradient" to add a darken background This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./laptopguy.jpg");
+ /* Use "linear-gradient" to add a darken background This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./laptopguy.jpg");
 
-    /* Set a specific height */
-    height: 100%;
+  /* Set a specific height */
+  height: 50%;
 
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; */
 }
 
 /* Place text in the middle of the image */
 .hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
 }
 
 /* H1 Heading */
 .hero-text h1 {
-    color: black;
-    background: linear-gradient(to right, #E5E5E5, #FCA311);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-family: 'Abril Fatface', cursive;
+  color: black;
+  background: linear-gradient(to right, #e5e5e5, #fca311);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-family: "Abril Fatface", cursive;
 }
 
 /* Two sentence section */
-.hero-text p{
-text-transform: uppercase;
-letter-spacing: 1px;
-font-family: 'Lato', sans-serif;
-padding:5px;
+.hero-text p {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Lato", sans-serif;
+  padding: 5px;
 }
 
-.hero-text p>span {
-    color: #E63946;
+.hero-text p > span {
+  color: #e63946;
 }
 
-#month{
-color:#A8DADC;
+#month {
+  color: #a8dadc;
 }
 
-/* Button section */ 
+/* Button section */
 .hero-text button {
-    border-radius: 50px;
-    background-color: #FCA311;
-    border: 1px solid;
-    padding: 5px;
-    margin-top: 2px;
-    cursor: pointer;
-    font-family: 'Lato', sans-serif; 
+  border-radius: 50px;
+  background-color: #fca311;
+  border: 1px solid;
+  padding: 5px;
+  margin-top: 2px;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
 }
 
 .hero-text button:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 /* Start of Navbar */
 
-
-
 /* The background for navbar */
-.navbar{
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #fff;
+  height: 60px;
+}
+
+/* The text inside the navbar */
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-family: "Abril Fatface", cursive;
+  letter-spacing: 1px;
+}
+ #logo{
+    display: none;
+ }
+
+ #extra{
+    display: none;
+ }
+
+/* The little disclosure tuition page */
+.sinfo {
+  padding: 3em;
+  background-color: #e5e5e5;
+  font-family: "Lato", sans-serif;
+}
+
+.sinfo h3 {
+  padding-left: 10px;
+  padding-bottom: 15px;
+  letter-spacing: 1px;
+  font-size: 35px;
+}
+
+.sinfo p {
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+
+/* The Inspiration page */
+.apply {
+  padding: 20px;
+}
+
+/* The header */
+.apply h1 {
+  font-family: "Abril Fatface", cursive;
+  letter-spacing: 2px;
+  padding-bottom: 5px;
+}
+
+hr {
+  color: #e5e5e5;
+}
+
+.apply p {
+  padding-top: 10px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  padding-bottom: 10px;
+}
+/* The Apply now Button */
+.apply button {
+  border: 1px black solid;
+  padding: 20px;
+  font-family: "Lato", sans-serif;
+  background-color: #fca311;
+  border-radius: 50px;
+  margin-left: 40%;
+}
+
+/* After 600px */
+.apply img {
+  width: 100%;
+  padding-top: 20px;
+}
+
+#image{
+    display: none;
+}
+
+/* curriculm page */
+.curriculm {
+  padding: 3em;
+  background-color: #e5e5e5;
+  font-family: "Lato", sans-serif;
+}
+
+.curriculm p {
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+
+.curriculm a {
+  text-decoration: none;
+  color: #000;
+  background-color: #a8dadc;
+  padding: 5px;
+}
+/* Start of the Footer */
+.top {
+  display: flex;
+  justify-content: space-evenly;
+}
+/* The left text of the footer */
+.top .links-left li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.top .links-left ul {
+  padding: 30px;
+}
+
+.top .links-left li > a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Abril Fatface", cursive;
+  letter-spacing: 1px;
+}
+/* Starts the right side */
+.top .links-right li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.top .links-right ul {
+  padding: 30px;
+}
+
+.top .links-right li > a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Abril Fatface", cursive;
+  letter-spacing: 1px;
+}
+/* After 600px */
+.top .links-next{
+    display: none;
+}
+
+
+/* After 600px is this Section */
+@media (min-width: 600px) {
+  .hero-text h1 {
+    color: black;
+    background: linear-gradient(to right, #e5e5e5, #fca311);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: "Abril Fatface", cursive;
+    text-align: center;
+  }
+  .hero-image{
+
+  /* Use "linear-gradient" to add a darken background This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./womenlaptop.jpg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; 
+  }
+
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    color: white;
+  }
+
+  .navbar {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background-color: #fff;
     height: 60px;
-}
+  }
 
-/* The text inside the navbar */
-.navbar a{
+  #logo{
+display: flex;
+justify-content: space-evenly;
+height: inherit;
+  }
+
+  #extra{
+    display: none;
+  }
+ 
+  .top .links-next li > a{
     text-decoration: none;
-    color: black;
-    font-family: 'Abril Fatface', cursive;
+    color: #000;
+    font-family: "Abril Fatface", cursive;
     letter-spacing: 1px;
 }
-
-/* The little disclosure tuition page */
-.sinfo{
-padding: 20px;
-background-color: #E5E5E5;
+.top .links-next ul{
+padding: 30px;
 }
 
-.sinfo h3{
-    font-family:'Lato', sans-serif;
-    padding-left: 10px;
-    padding-bottom: 15px;
-    letter-spacing: 1px;
-    font-size: 35px;
+.top .links-next{
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.sinfo p{
-    letter-spacing: 1px;
-    line-height: 1.4;
-    font-family:'Lato', sans-serif;
-}
+.top .links-next li {
+    list-style-type: none;
+    padding: 10px;
+  }
 
-/* The Inspiration page */
-.apply{
-    padding:20px;
-}
+  .apply img {
+ display: none;
+  }
 
-/* The header */
-.apply h1{
-    font-family: 'Abril Fatface', cursive;
-    letter-spacing: 2px;
-    padding-bottom: 5px;
-}
-
-hr{
-    color: #E5E5E5;
-}
-
-.apply p{
-padding-top: 10px;
-font-family: 'Lato', sans-serif;
-letter-spacing: 1px;
-line-height: 1.4;
-padding-bottom: 10px;
-}
-/* The Apply now Button */
-.apply button{
-    border: 1px black solid;
-    padding:20px;
-    font-family: 'Lato', sans-serif;
-    background-color: #FCA311;
-}
-
-.apply img{
-    width:100%;
+  #image{
+    display: flex;
+    width: 100%;
     padding-top: 20px;
+  }
+
 }
 
+/* After 960px */
+@media (min-width:960px){
+    .hero-image {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./background-img.jpg");
+
+  /* Set a specific height */
+  height: 80%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; 
+  }
+    #extra{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .hero-text {
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        color: white;
+      }
+
+      .sinfo {
+        padding: 3em;
+        background-color: #e5e5e5;
+        font-family: "Lato", sans-serif;
+        
+      }
+      
+}
